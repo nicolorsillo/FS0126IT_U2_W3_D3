@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+  </head>
+  <body data-bs-theme="dark">
+    <nav class="navbar navbar-dark bg-dark mb-4 position-sticky">
+      <div class="container">
+        <span class="navbar-brand mb-0 h1">Book Store</span>
+        <a href="#cart"> <i class="bi bi-cart"></i></a>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-9">
+          <div
+            id="book-container"
+            class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4"
+          ></div>
+        </div>
+
+        <div class="col-md-3 my-5 my-md-0" id="cart">
+          <div class="card sticky-top" style="top: 20px">
+            <div class="card-header bg-primary text-white">Carrello</div>
+            <ul id="cart-list" class="list-group list-group-flush"></ul>
+            <div class="card-footer" id="cart-total">Totale: €0.00</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
